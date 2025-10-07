@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CG Cavalry - Download Free CG Resources, Tutorials, 3D Models, Textures & Software">
+    <meta name="theme-color" content="#1a1a2e">
+    <title>CG Cavalry - Free CG Resources & Tutorials</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>CG CAVALRY</h1>
+                    <p class="tagline">Computer Graphics Resources</p>
+                </div>
+                <nav class="main-nav">
+                    <a href="#" class="nav-link active" data-category="all">Home</a>
+                    <a href="#" class="nav-link" data-category="all">Downloads</a>
+                    <a href="#" class="nav-link" data-category="tutorials">Tutorials</a>
+                    <a href="#" class="nav-link" data-category="3d-models">3D Models</a>
+                    <a href="#" class="nav-link" data-category="ai">AI</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search & Filter Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search for tutorials, models, textures..." class="search-input">
+                <button class="search-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="filter-tags">
+                <button class="tag active" data-category="all">All</button>
+                <button class="tag" data-category="tutorials">Tutorials</button>
+                <button class="tag" data-category="3d-models">3D Models</button>
+                <button class="tag" data-category="textures">Textures</button>
+                <button class="tag" data-category="software">Software</button>
+                <button class="tag" data-category="plugins">Plugins</button>
+                <button class="tag" data-category="ai">AI</button>
+                <button class="tag" data-category="free">Free</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Categories</h3>
+                    <ul class="category-list">
+                        <li><a href="#" data-category="all">Downloads <span class="count">(28,200)</span></a></li>
+                        <li><a href="#" data-category="all">CG Releases <span class="count">(26,025)</span></a></li>
+                        <li><a href="#" data-category="tutorials">Tutorials <span class="count">(15,485)</span></a></li>
+                        <li><a href="#" data-category="3d-models">3D Models <span class="count">(1,684)</span></a></li>
+                        <li><a href="#" data-category="textures">Textures <span class="count">(585)</span></a></li>
+                        <li><a href="#" data-category="software">Software <span class="count">(9,899)</span></a></li>
+                        <li><a href="#" data-category="plugins">Plugins <span class="count">(3,934)</span></a></li>
+                        <li><a href="#" data-category="ai">AI Resources <span class="count">(6)</span></a></li>
+                        <li><a href="#" data-category="all">Ebooks <span class="count">(277)</span></a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Recent Posts</h3>
+                    <ul class="recent-posts">
+                        <li><a href="#" class="recent-post-link" data-search="Stable Diffusion">Stable Diffusion - AI Art Generation</a></li>
+                        <li><a href="#" class="recent-post-link" data-search="ChatGPT">ChatGPT for 3D Artists</a></li>
+                        <li><a href="#" class="recent-post-link" data-search="Midjourney">Midjourney Concept Art Course</a></li>
+                        <li><a href="#" class="recent-post-link" data-search="Unity">Unity Mobile Game Development</a></li>
+                        <li><a href="#" class="recent-post-link" data-search="Blender">Blender Character Creation</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Tag Cloud</h3>
+                    <div class="tag-cloud">
+                        <a href="#" class="cloud-tag" data-search="Blender">Blender</a>
+                        <a href="#" class="cloud-tag" data-search="Maya">Maya</a>
+                        <a href="#" class="cloud-tag" data-search="3ds Max">3ds Max</a>
+                        <a href="#" class="cloud-tag" data-search="Cinema 4D">Cinema 4D</a>
+                        <a href="#" class="cloud-tag" data-search="Unity">Unity</a>
+                        <a href="#" class="cloud-tag" data-search="Unreal Engine">Unreal Engine</a>
+                        <a href="#" class="cloud-tag" data-search="Photoshop">Photoshop</a>
+                        <a href="#" class="cloud-tag" data-search="ZBrush">ZBrush</a>
+                        <a href="#" class="cloud-tag" data-search="Substance">Substance</a>
+                        <a href="#" class="cloud-tag" data-search="Houdini">Houdini</a>
+                        <a href="#" class="cloud-tag" data-search="AI">AI</a>
+                        <a href="#" class="cloud-tag" data-search="Stable Diffusion">Stable Diffusion</a>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="content-area">
+                <div class="content-grid" id="contentGrid">
+                    <!-- Content cards will be dynamically generated -->
+                </div>
+                
+                <div class="pagination">
+                    <button class="page-btn" disabled>← Previous</button>
+                    <div class="page-numbers">
+                        <button class="page-num active">1</button>
+                        <button class="page-num">2</button>
+                        <button class="page-num">3</button>
+                        <button class="page-num">4</button>
+                        <button class="page-num">5</button>
+                    </div>
+                    <button class="page-btn">Next →</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About CG Cavalry</h4>
+                    <p>Your premier destination for free CG resources, tutorials, 3D models, textures, and software downloads.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#" class="footer-link" data-category="all">Home</a></li>
+                        <li><a href="#" class="footer-link" data-category="all">Downloads</a></li>
+                        <li><a href="#" class="footer-link" data-category="tutorials">Tutorials</a></li>
+                        <li><a href="#" class="footer-link" data-category="3d-models">3D Models</a></li>
+                        <li><a href="#" class="footer-link" data-category="ai">AI</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CG Cavalry. All rights reserved. | Crafted by Alan Craik</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
